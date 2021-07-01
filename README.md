@@ -4,11 +4,11 @@ https://github.com/mitchellkrogza/Phishing.Database
 
 ## Additions
 
-DNS systems can operate on the domain level (everything before the first /) while IE Squid-proxy or uBlock Origin can operate on both sites of the slashes.
+DNS systems can operate on the domain level (everything before the first /) while IE Squid-proxy or uBlock Origin can operate on both sides of the slashes.
 
-The `add-link` is for domains that have been hacked, IE a wp site where the phishing script lies in a subfolder vs a subdomain.
+The `add-link` is for domains that have been hacked, ie. a Wordpress site where the phishing script lies in a subfolder vs a subdomain.
 
-This means if a entire domain are only used i.e. `phishingexample.com`, add it to the domain list, if it reside inside a subfolder i.e. `/sub/oath/phishing-script/` then it goes to the url-list
+This means if an entire domain is being used for phishing i.e. `phishingexample.com`, then add it to the domain list (add-domain). If the phishing threat resides inside a subfolder of the domain i.e. `/sub/oath/phishing-script/payload.php` then add it to the url list (add-link).
 
 ### Add Phishing Domains
 
