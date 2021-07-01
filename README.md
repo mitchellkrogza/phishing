@@ -8,7 +8,7 @@ DNS systems can operate on the domain level (everything before the first /) whil
 
 The `add-link` is for domains that have been hacked, ie. a Wordpress site where the phishing script lies in a subfolder vs a subdomain.
 
-This means if an entire domain is being used for phishing i.e. `phishingexample.com`, then add it to the domain list (add-domain). If the phishing threat resides inside a subfolder of the domain i.e. `/sub/oath/phishing-script/payload.php` then add it to the url list (add-link).
+This means if an entire domain is being used for phishing i.e. `phishing.example.com`, then add it to the domain list (add-domain). If the phishing threat resides inside a subfolder of the domain i.e. `/sub/oath/phishing-script/payload.php` then add it to the url list (add-link).
 
 ### Add Phishing Domains
 
