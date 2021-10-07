@@ -1,5 +1,5 @@
-# phishing
-Central Repository for Adding or Removing Domains / Links from the Phishing.Database project
+# Phishing
+Central Repository for Adding or Removing Domains / Links or IP-addresses to the Phishing.Database project: 
 https://github.com/mitchellkrogza/Phishing.Database
 
 ## Additions
@@ -20,4 +20,10 @@ To add domains to this database send a Pull Request on the file https://github.c
 
 To add links / urls to this database send a Pull Request on the file https://github.com/mitchellkrogza/phishing/blob/main/add-link
 
-    Include the full link
+    Include the full link including the protocol like http://, https:// or news://
+
+### Add Ip addresses
+
+To add IP addresses to this database send a Pull Request on the file https://github.com/mitchellkrogza/phishing/blob/main/IP-addr.cidr.list
+
+    ONLY IP-addresses + the CIDR notation. ie: 192.0.2.1/24
