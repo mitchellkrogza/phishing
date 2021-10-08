@@ -59,9 +59,11 @@ body:
       line spacing before and after the image code line. The tip will add"
       one line after the paste :wink:
       
+      ```
       <details><summary>Click to expand</summary>
       
       
-      </details>      
+      </details>
+      ```
   validations:
     required: false
