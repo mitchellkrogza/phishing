@@ -5,17 +5,17 @@ body:
   attributes:
     label: Domain/URL/IP(s) where you have found the Phishing
     description: |
-      "List the Domain/URL/IP for where the phishing occurs is
+      List the Domain/URL/IP for where the phishing occurs is
       **mandatory**. 
       The backticks (`) surrounding the Domain/URL/IPs are important,
       it prevents the URL from becoming clickable.
       
       Warn with "NSFW" where applicable.
 
-      **Help**: To make the right commit for IP-addresses you have to
+      **Help** To make the right commit for IP-addresses you have to
       also prefix the CIDR notation, if you don't know what a CIDR
       notation is, the right value is most likely `/32`, which in short
-      means exactly this IP address."
+      means exactly this IP address.
     placeholder: |
       `https://example.com`
       `https://example.org/phishing`
@@ -50,10 +50,10 @@ body:
   attributes:
     label: Screenshot
     description: |
-      "If you feel a screenshot can say more than 1000 hard drives, do
+      If you feel a screenshot can say more than 1000 hard drives, do
       please feel free to add it :smiley:
 
-      **TIP**: Place your mouse on the line just above the `</details>`
+      **TIP** Place your mouse on the line just above the `</details>`
       and paste your screenshot and make sure that there is at least one
       line spacing before and after the image code line. The tip will add"
       one line after the paste :wink:
@@ -63,4 +63,4 @@ body:
       
       </details>
   validations:
-    required: true
+    required: false
