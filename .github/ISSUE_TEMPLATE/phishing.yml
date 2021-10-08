@@ -2,7 +2,7 @@ name: Phishing Report
 description: File a Phishing report
 body:
   - type: textarea
-    attributes:.
+    attributes:
       label: Domain/URL/IP(s) where you have found the Phishing
       description: |
         List the Domain/URL/IP for where the phishing occurs is
