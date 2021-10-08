@@ -20,6 +20,7 @@ body:
       `https://example.com`
       `https://example.org/phishing`
       `192.0.2.0/24`
+    render: true
   validations:
     required: true
 
