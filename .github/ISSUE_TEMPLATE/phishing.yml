@@ -19,9 +19,9 @@ body:
       notation is, the right value is most likely `/32`, which in short
       means exactly this IP address.
     placeholder: |
-      `example.com`
-      `https://example.org/phishing`
-      `192.0.2.0/24`
+      example.com
+      https://example.org/phishing
+      192.0.2.0/24
     render: true
   validations:
     required: true
@@ -61,6 +61,8 @@ body:
       line spacing before and after the image code line. The tip will add"
       one line after the paste.
       
+      **INFO** There need to be at least one blank line separating before and after the image line
+
       Copy paste these lines to the text area below
 
       ```
