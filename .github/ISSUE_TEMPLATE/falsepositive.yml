@@ -1,0 +1,110 @@
+# https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository#creating-issue-forms
+name: False Positive Report
+description: File a Phishing report
+labels: ["False Positive"]
+assignees:
+  - mitchellkrogza
+  - funilrys
+body:
+  - type: markdown
+    attributes:
+      value: |
+        We understand being listed on a Phishing Database like this can be frustrating and embarrassing for many web site owners.
+
+        The first step is to remain calm.
+        
+        The second step is to rest assured one of our maintainers will address your issue as soon as possible.
+
+        Please make sure you have provided as much information details as possible to help speed up the process.
+
+  - type: textarea
+    id: record
+    attributes:
+      label: Domain/URL/IP(s) you believes NOT to be Phishing
+      description: |
+        Please list any domains and links listed here which you believe are a false positive.
+        
+        Please warn with "NSFW" where applicable.
+      placeholder: |
+        `example.com`
+        `https://example.org/phishing`
+        `192.0.2.0/24`
+      render: css
+    validations:
+      required: true
+
+  - type: dropdown
+    id: source
+    attributes:
+      label: More Information
+      description: |
+        How did you discover your IP-address or domain was listed in the Phishing or Phishing.Database?
+      multiple: true
+      options:
+        - mitchellkrogza Phishing
+        - mitchellkrogza Phishing.Database
+        - Website was hacked
+        - Listed as Phishing on Phishtank or OpenPhish
+        - Listed on VirusTotal
+        - Other (Please note where in 'Related external source' below)
+
+  - type: textarea
+    id: source_external
+    attributes:
+      label: Related external source
+      description: |
+        Please let us know where you found this if not listed above
+
+        One link per line.
+      placeholder: |
+        `https://example.org`
+      render:
+        - markdown
+    validations:
+      required: false
+
+  - type: textarea
+    attributes:
+      label: Screenshot
+      id: Screenshot
+      description: |
+        If you feel a screenshot can say more than 1000 hard drives, do
+        please feel free to add it here :smiley:
+
+        **TIP** Place your mouse on the line just above the `</details>`
+        and paste your screenshot and make sure that there is at least one
+        line spacing before and after the image code line. The tip will add"
+        one line after the paste :wink:
+
+        Copy paste these lines to the text area below
+
+        ```
+        <details><summary>Click to expand</summary>
+        
+        
+        </details>
+        ```
+      render: markdown
+    validations:
+      required: false
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the issue
+      description: |
+        Be as clear as possible: nobody can read your mind, and nobody
+        is looking at your issue over your shoulder.
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: "## Send a Pull Request for faster removal"
+  - type: markdown
+    attributes:
+      value: |
+        Users who understand github and creating Pull Requests can assist us with faster removals by sending a PR on the `whitelist.me` file at
+        https://github.com/mitchellkrogza/Phishing.Database/blob/master/whitelist.me/whitelist.me
+        
+        Please include the same above information to help speed up the whitelisting process.

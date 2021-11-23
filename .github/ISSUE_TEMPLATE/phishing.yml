@@ -19,7 +19,7 @@ body:
       notation is, the right value is most likely `/32`, which in short
       means exactly this IP address.
     placeholder: |
-      `https://example.com`
+      `example.com`
       `https://example.org/phishing`
       `192.0.2.0/24`
     render: true
@@ -35,7 +35,7 @@ body:
 
       One link per line.
     placeholder: |
-      https://mypdns.org
+      https://example.org
   validations:
     required: false
 
@@ -54,14 +54,16 @@ body:
     id: Screenshot
     description: |
       If you feel a screenshot can say more than 1000 hard drives, do
-      please feel free to add it here :smiley:
+      please feel free to add it here.
 
       **TIP** Place your mouse on the line just above the `</details>`
       and paste your screenshot and make sure that there is at least one
       line spacing before and after the image code line. The tip will add"
-      one line after the paste :wink:
+      one line after the paste.
       
-      ```html
+      Copy paste these lines to the text area below
+
+      ```
       <details><summary>Click to expand</summary>
       
       
