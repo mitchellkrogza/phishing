@@ -26,27 +26,32 @@ body:
         
         Please warn with "NSFW" where applicable.
       placeholder: |
-        `example.com`
-        `https://example.org/phishing`
-        `192.0.2.0/24`
+        example.com
+        https://example.org/phishing
+        192.0.2.0/24
       render: css
     validations:
       required: true
 
-  - type: dropdown
+  - type: checkboxes
     id: source
     attributes:
       label: More Information
       description: |
         How did you discover your IP-address or domain was listed in the Phishing or Phishing.Database?
-      multiple: true
       options:
-        - mitchellkrogza Phishing
-        - mitchellkrogza Phishing.Database
-        - Website was hacked
-        - Listed as Phishing on Phishtank or OpenPhish
-        - Listed on VirusTotal
-        - Other (Please note where in 'Related external source' below)
+        - label: mitchellkrogza Phishing
+          required: false
+        - label: mitchellkrogza Phishing.Database
+          required: false
+        - label: Website was hacked
+          required: false
+        - label: Listed as Phishing on Phishtank or OpenPhish
+          required: false
+        - label: Listed on VirusTotal
+          required: false
+        - label: Other (Please tell us where in *Related external source* below)
+          required: false
 
   - type: textarea
     id: source_external
@@ -57,7 +62,7 @@ body:
 
         One link per line.
       placeholder: |
-        `https://example.org`
+        https://example.org
       render:
         - markdown
     validations:
@@ -71,10 +76,7 @@ body:
         If you feel a screenshot can say more than 1000 hard drives, do
         please feel free to add it here :smiley:
 
-        **TIP** Place your mouse on the line just above the `</details>`
-        and paste your screenshot and make sure that there is at least one
-        line spacing before and after the image code line. The tip will add"
-        one line after the paste :wink:
+        **INFO** There need to be at least one blank line separating before and after the image line
 
         Copy paste these lines to the text area below
 
