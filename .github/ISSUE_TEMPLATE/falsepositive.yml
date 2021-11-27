@@ -20,7 +20,7 @@ body:
   - type: textarea
     id: record
     attributes:
-      label: Domain/URL/IP(s) you believes NOT to be Phishing
+      label: Domain/URL/IP(s) you believe NOT to be Phishing
       description: |
         Please list any domains and links listed here which you believe are a false positive.
         
