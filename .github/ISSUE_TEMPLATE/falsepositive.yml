@@ -15,14 +15,14 @@ body:
         
         The second step is to rest assured one of our maintainers will address your issue as soon as possible.
 
-        Please make sure you have provided as much information details as possible to help speed up the process.
+        Please make sure you have provided as much information and details as possible to help speed up the process.
 
   - type: textarea
     id: record
     attributes:
       label: Domain/URL/IP(s) you believe NOT to be Phishing
       description: |
-        Please list any domains and links listed here which you believe are a false positive.
+        Please give us a list of FQDN (domains) or complete links (URL's) that you believe are a false positive.
         
         Please warn with "NSFW" where applicable.
       placeholder: |
@@ -78,7 +78,7 @@ body:
 
         **INFO** There need to be at least one blank line separating before and after the image line
 
-        Copy paste these lines to the text area below
+        Copy and paste the lines to the text area below.
 
         ```
         <details><summary>Click to expand</summary>
