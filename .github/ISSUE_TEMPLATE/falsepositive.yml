@@ -9,20 +9,24 @@ body:
   - type: markdown
     attributes:
       value: |
-        We understand being listed on a Phishing Database like this can be frustrating and embarrassing for many web site owners.
+        We understand being listed on a Phishing Database like this can be
+        frustrating and embarrassing for many web site owners.
 
         The first step is to remain calm.
         
-        The second step is to rest assured one of our maintainers will address your issue as soon as possible.
+        The second step is to rest assured one of our maintainers will address
+        your issue as soon as possible.
 
-        Please make sure you have provided as much information and details as possible to help speed up the process.
+        Please make sure you have provided as much information and details as
+        possible to help speed up the processing of your whitelisting application.
 
   - type: textarea
     id: record
     attributes:
       label: Domain/URL/IP(s) you believe NOT to be Phishing
       description: |
-        Please give us a list of FQDN (domains) or complete links (URL's) that you believe are a false positive.
+        Please give us a list of FQDN (domains) or complete links (URL's) that
+        you believe are a false positive.
         
         Please warn with "NSFW" where applicable.
       placeholder: |
@@ -38,7 +42,8 @@ body:
     attributes:
       label: More Information
       description: |
-        How did you discover your IP-address or domain was listed in the Phishing or Phishing.Database?
+        How did you discover your IP-address or domain was listed in the
+        Phishing or Phishing.Database?
       options:
         - label: mitchellkrogza Phishing
           required: false
@@ -58,9 +63,7 @@ body:
     attributes:
       label: Related external source
       description: |
-        Please let us know where you found this if not listed above
-
-        One link per line.
+        Please let us know where you found this if not listed above. (One link per line.)
       placeholder: |
         https://example.org
       render:
@@ -76,7 +79,8 @@ body:
         If you feel a screenshot can say more than 1000 hard drives, do
         please feel free to add it here :smiley:
 
-        **INFO** There need to be at least one blank line separating before and after the image line
+        **INFO** There need to be at least one blank line separating before
+        and after the image line
 
         Copy and paste the lines to the text area below.
 
@@ -96,7 +100,7 @@ body:
       label: Describe the issue
       description: |
         Be as clear as possible: nobody can read your mind, and nobody
-        is looking at your issue over your shoulder.
+        is looking over your shoulder.
     validations:
       required: true
 
@@ -106,7 +110,8 @@ body:
   - type: markdown
     attributes:
       value: |
-        Users who understand github and creating Pull Requests can assist us with faster removals by sending a PR on the `falsepositive.list` file at
+        Users who understand github and creating Pull Requests can assist us
+        with faster removals by sending a PR on the `falsepositive.list` file at
         https://github.com/mitchellkrogza/phishing/blob/main/falsepositive.list
 
         Please include the same above information to help speed up the whitelisting process.
