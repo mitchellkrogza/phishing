@@ -54,16 +54,12 @@ body:
     id: Screenshot
     description: |
       If you feel a screenshot can say more than 1000 hard drives, do
-      please feel free to add it here.
+      please feel free to add it here :smiley:
 
-      **TIP** Place your mouse on the line just above the `</details>`
-      and paste your screenshot and make sure that there is at least one
-      line spacing before and after the image code line. The tip will add"
-      one line after the paste.
-      
-      **INFO** There need to be at least one blank line separating before and after the image line
+      **INFO** There need to be at least one blank line separating before
+      and after the image line
 
-      Copy paste these lines to the text area below
+      Copy and paste the lines to the text area below.
 
       ```
       <details><summary>Click to expand</summary>
