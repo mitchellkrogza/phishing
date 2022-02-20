@@ -2,6 +2,7 @@ name: Phishing Report
 description: File a Phishing report
 assignees:
   - mitchellkrogza
+  - funilrys
 body:
 - type: textarea
   attributes:
