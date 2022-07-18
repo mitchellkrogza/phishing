@@ -29,16 +29,11 @@ body:
 
 - type: textarea
   attributes:
-    label: Related external source
+    label: Impersonated domain
     description: |
-      If you have found your information in another fora, please paste
-      link here.
-
-      One link per line.
-    placeholder: |
-      https://example.org
+      Provide the FQDN domain for which you believes is the victim site.
   validations:
-    required: false
+    required: true
 
 - type: textarea
   attributes:
@@ -69,5 +64,18 @@ body:
       </details>
       ```
     render: false
+  validations:
+    required: false
+
+- type: textarea
+  attributes:
+    label: Related external source
+    description: |
+      If you have found your information in another fora, please paste
+      link here.
+
+      One link per line.
+    placeholder: |
+      https://example.org
   validations:
     required: false
