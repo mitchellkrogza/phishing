@@ -1,4 +1,9 @@
 ## Domain/URL/IP(s) where you have found the Phishing:
+<!-- Required. Use Back ticks. -->
+
+
+## Impersonated domain
+<!-- Required. Use Back ticks. -->
 
 
 ## Related external source
@@ -9,7 +14,7 @@
 
 
 ### Screenshot
-<--! If you feel a screenshot can say more than 1000 hard drives, do please feel free to add it here :smiley:
+<!-- If you feel a screenshot can say more than 1000 hard drives, do please feel free to add it here
 
 **TIP**: Place your mouse on the line just above the `</details>` 
 and paste your screenshot and make sure that there is at least one
