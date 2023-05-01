@@ -1,7 +1,7 @@
 # https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository#creating-issue-forms
 name: False Positive Report
 description: File a Phishing report
-labels: ["False Positive"]
+labels: ['False Positive']
 assignees:
   - mitchellkrogza
   - funilrys
@@ -9,41 +9,60 @@ body:
   - type: markdown
     attributes:
       value: |
-        We understand being listed on a Phishing Database like this can be
-        frustrating and embarrassing for many web site owners.
+        We understand being listed on a Phishing Database like this one
+        can be frustrating and embarrassing for many web site owners.
 
         The first step is to remain calm.
-        
-        The second step is to rest assured one of our maintainers will address
-        your issue as soon as possible.
 
-        Please make sure you have provided as much information and details as
-        possible to help speed up the processing of your whitelisting application.
+        The second step is to rest assured one of our maintainers will
+        address your issue as soon as possible.
+
+        Please make sure you have provided as much information and details
+        as possible to help speed up the processing of your whitelisting
+        application.
 
   - type: textarea
     id: record
     attributes:
-      label: Domain/URL/IP(s) you believe NOT to be Phishing
+      label: Domain/URL/IP(s) you believes NOT to be Phishing
       description: |
-        Please give us a list of FQDN (domains) or complete links (URL's) that
-        you believe are a false positive.
-        
+        Please give us a list of
+        [FQDN](https://en.wikipedia.org/wiki/Fully_qualified_domain_name)
+        (domains) or complete links (URL's) that you believe are a false
+        positive.
+
         Please warn with "NSFW" where applicable.
       placeholder: |
         example.com
         https://example.org/phishing
         192.0.2.0/24
-      render: css
+      render: CSS
     validations:
       required: true
+
+  - type: checkboxes
+    id: recordtype
+    attributes:
+      label: Whitelist type
+      description: How do you believe the domain or url should be
+        whitelisted? More help can be found in the
+        [README](https://github.com/mitchellkrogza/phishing#false-positives)
+      options:
+        - label: '`1 to 1` match'
+          required: false
+        - label: '`ALL` subdomains or `REGEX`'
+          required: false
+        - label: '`RZD` all sub- and top level domains matching given
+            record(s)'
+          required: false
 
   - type: checkboxes
     id: source
     attributes:
       label: More Information
       description: |
-        How did you discover your IP-address or domain was listed in the
-        Phishing or Phishing.Database?
+        Where did you discover your IP-address or domain was listed in
+        the Phishing or Phishing.Database?
       options:
         - label: mitchellkrogza Phishing
           required: false
@@ -63,21 +82,23 @@ body:
     attributes:
       label: Related external source
       description: |
-        Please let us know where you found this if not listed above. (One link per line.)
+        Please let us know where you found your site listed if it isn't
+        mentioned above.
+
+        (One link per line.)
       placeholder: |
         https://example.org
-      render:
-        - markdown
+      render: Markdown
     validations:
       required: false
 
   - type: textarea
+    id: Screenshot
     attributes:
       label: Screenshot
-      id: Screenshot
       description: |
-        If you feel a screenshot can say more than 1000 hard drives, do
-        please feel free to add it here :smiley:
+        If you feel a screenshot can say more than 1000 hard drives of
+        words, do please feel free to add it here :smiley:
 
         **INFO** There need to be at least one blank line separating before
         and after the image line
@@ -86,11 +107,12 @@ body:
 
         ```
         <details><summary>Click to expand</summary>
-        
-        
+
+        ![image](imageURI)
+
         </details>
         ```
-      render: false
+      render: Markdown
     validations:
       required: false
 
@@ -106,7 +128,7 @@ body:
 
   - type: markdown
     attributes:
-      value: "## Send a Pull Request for faster removal"
+      value: '## Send a Pull Request for faster removal'
   - type: markdown
     attributes:
       value: |
