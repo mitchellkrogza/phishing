@@ -26,8 +26,8 @@ To add links / urls to this database send a Pull Request on the file https://git
 
 To be able to keep the whitelist as precise as possible, the Phishing DB are using 3 types of list.
 
-1. The [first list](../mitchellkrogza/phishing/blob/main/falsepositive.list) is matching 1 on 1. This means if we should only whitelist IE. `subdomain1.example.com` but not `subdomain2.example.com`, then this is the list.
-2. The [other list](../mitchellkrogza/phishing/blob/main/falsepositive_all.list) (ALL) is [wildcard](https://github.com/Ultimate-Hosts-Blacklist/whitelist/blob/script/README.rst#all) based. This means every subdomains from `example.net` and lover level such as `subdomain1.example.net` & `subdomain2.example.net`. This list also accepts full regex. Except from ending `$` and `\\` as this is done by automatically.
-3. The [third list](../mitchellkrogza/phishing/blob/main/falsepositive_rzd.list) (RZD) will probably never be used... Read the full doc here before attemting to making changes to it: https://github.com/Ultimate-Hosts-Blacklist/whitelist/blob/script/README.rst#rzd
+1. The [first list](../main/falsepositive.list) is matching 1 on 1. This means if we should only whitelist IE. `subdomain1.example.com` but not `subdomain2.example.com`, then this is the list.
+2. The [other list](../main/falsepositive_regex.list) (ALL) is [wildcard](https://github.com/Ultimate-Hosts-Blacklist/whitelist/blob/script/README.rst#all) based. This means every subdomains from `example.net` and lover level such as `subdomain1.example.net` & `subdomain2.example.net`. This list also accepts full regex. Except from ending `$` and `\\` as this is done by automatically.
+3. The [third list](../main/falsepositive_rzd.list) (RZD) will probably never be used... Read the full doc here before attemting to making changes to it: https://github.com/Ultimate-Hosts-Blacklist/whitelist/blob/script/README.rst#rzd
 
 For better understanding of these speciallities, you are welcome to read the tools [Readme](https://github.com/Ultimate-Hosts-Blacklist/whitelist/tree/script#special-markers).
