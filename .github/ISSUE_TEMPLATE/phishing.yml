@@ -8,7 +8,7 @@ body:
     attributes:
       label: Domain/URL/IP(s) where you have found the Phishing
       description: |
-        List the Domain/URL/IP for where the phishing occurs is
+        List the Domain/URI/IP for where the phishing occurs is
         **mandatory**. 
         The backticks (`) surrounding the Domain/URL/IPs are important,
         it prevents the URL from becoming clickable.
@@ -32,12 +32,13 @@ body:
       label: Impersonated domain
       description: |
         Provide the FQDN domain for which you believes is the victim site.
+      render: CSS
     validations:
       required: true
 
   - type: textarea
     attributes:
-      label: Describe the issue
+      label: Describe your experience.
       description: |
         Be as clear as possible: nobody can read your mind, and nobody
         is looking at your issue over your shoulder.
@@ -64,6 +65,14 @@ body:
         </details>
         ```
       render: Markdown
+      placeholder: |
+        ```
+        <details><summary>Click to expand</summary>
+        
+        ![Screenshot of phishing](https://full.link/to-image.ext)
+        
+        </details>
+        ```
     validations:
       required: false
 
