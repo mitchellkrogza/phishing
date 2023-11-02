@@ -1,7 +1,7 @@
 # https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository#creating-issue-forms
 name: False Positive Report
 description: File a Phishing report
-labels: ['False Positive']
+labels: ["False Positive"]
 assignees:
   - mitchellkrogza
   - funilrys
@@ -9,28 +9,25 @@ body:
   - type: markdown
     attributes:
       value: |
-        We understand being listed on a Phishing Database like this one
-        can be frustrating and embarrassing for many web site owners.
+        We understand being listed on a Phishing Database like this can be
+        frustrating and embarrassing for many web site owners.
 
         The first step is to remain calm.
+        
+        The second step is to rest assured one of our maintainers will address
+        your issue as soon as possible.
 
-        The second step is to rest assured one of our maintainers will
-        address your issue as soon as possible.
-
-        Please make sure you have provided as much information and details
-        as possible to help speed up the processing of your whitelisting
-        application.
+        Please make sure you have provided as much information and details as
+        possible to help speed up the processing of your whitelisting application.
 
   - type: textarea
-    id: record
+    id: FPrecord
     attributes:
-      label: Domain/URL/IP(s) you believes NOT to be Phishing
+      label: Domain/URL/IP(s) you believe NOT to be Phishing
       description: |
-        Please give us a list of
-        [FQDN](https://en.wikipedia.org/wiki/Fully_qualified_domain_name)
-        (domains) or complete links (URL's) that you believe are a false
-        positive.
-
+        Please give us a list of FQDN (domains) or complete links (URI's) that
+        you believe to be false positives.
+        
         Please warn with "NSFW" where applicable.
       placeholder: |
         example.com
@@ -44,16 +41,13 @@ body:
     id: recordtype
     attributes:
       label: Whitelist type
-      description: How do you believe the domain or url should be
-        whitelisted? More help can be found in the
-        [README](https://github.com/mitchellkrogza/phishing#false-positives)
+      description: How do you believe the domain or uri should be whitelisted? More help can be found in the [README](https://github.com/mitchellkrogza/phishing#false-positives)
       options:
         - label: '`1 to 1` match'
           required: false
         - label: '`ALL` subdomains or `REGEX`'
           required: false
-        - label: '`RZD` all sub- and top level domains matching given
-            record(s)'
+        - label: '`RZD` all sub- and top level domains matching given record(s)'
           required: false
 
   - type: checkboxes
@@ -61,31 +55,20 @@ body:
     attributes:
       label: More Information
       description: |
-        Where did you discover your IP-address or domain was listed in
-        the Phishing or Phishing.Database?
+        How did you discover your IP-address or domain was listed in the Phishing or Phishing.Database?
       options:
-        - label: mitchellkrogza Phishing
-          required: false
-        - label: mitchellkrogza Phishing.Database
-          required: false
         - label: Website was hacked
-          required: false
-        - label: Listed as Phishing on Phishtank or OpenPhish
-          required: false
-        - label: Listed on VirusTotal
-          required: false
-        - label: Other (Please tell us where in *Related external source* below)
-          required: false
+        - label: Phishtank
+        - label: OpenPhish
+        - label: VirusTotal
+        - label: Other (Please fill out the next box)
 
   - type: textarea
-    id: source_external
+    id: ifOther
     attributes:
       label: Related external source
       description: |
-        Please let us know where you found your site listed if it isn't
-        mentioned above.
-
-        (One link per line.)
+        Please let us know where you found this if not listed above. (One link per line.)
       placeholder: |
         https://example.org
       render: Markdown
@@ -97,43 +80,33 @@ body:
     attributes:
       label: Screenshot
       description: |
-        If you feel a screenshot can say more than 1000 hard drives of
-        words, do please feel free to add it here :smiley:
+        If you feel a screenshot can say more than 1000 hard drives, do
+        please feel free to add it here :smiley:
 
         **INFO** There need to be at least one blank line separating before
         and after the image line
 
-        Copy and paste the lines to the text area below.
+        Copy and paste the lines to the text area below and paste the image link between the lines.
 
         ```
         <details><summary>Click to expand</summary>
-
-        ![image](imageURI)
-
+        
+        
         </details>
         ```
-      render: Markdown
+      placeholder: |
+        ```
+        <details><summary>Click to expand</summary>
+
+        ![Screenshot of phishing](https://full.link/to-image.ext)
+        
+        </details>
+        ```
     validations:
       required: false
 
   - type: textarea
-    id: description
     attributes:
-      label: Describe the issue
-      description: |
-        Be as clear as possible: nobody can read your mind, and nobody
-        is looking over your shoulder.
-    validations:
-      required: true
-
-  - type: markdown
-    attributes:
-      value: '## Send a Pull Request for faster removal'
-  - type: markdown
-    attributes:
-      value: |
-        Users who understand github and creating Pull Requests can assist us
-        with faster removals by sending a PR on the `falsepositive.list` file at
-        https://github.com/mitchellkrogza/phishing/blob/main/falsepositive.list
-
-        Please include the same above information to help speed up the whitelisting process.
+      label: Additional context
+      value: Add any other context about the problem here.
+      render: Text
