@@ -6,11 +6,12 @@
 <!-- Required. Use Back ticks. -->
 
 
-## Related external source
-<!-- If you have found your information in another fora, please paste link here. One link per line. -->
-
 ## Describe the issue
 <!-- Be as clear as possible: nobody can read your mind, and nobody is looking at your issue over your shoulder. -->
+
+
+## Related external source
+<!-- If you have found your information in another fora, please paste link here. One link per line. -->
 
 
 ### Screenshot
