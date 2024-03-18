@@ -6,7 +6,7 @@ assignees:
 body:
   - type: textarea
     attributes:
-      label: Domain/URL/IP(s) where you have found the Phishing
+      label: Phishing Domain/URL/IP(s)
       description: |
         List the Domain/URI/IP for where the phishing occurs is
         **mandatory**. 
@@ -68,9 +68,9 @@ body:
       placeholder: |
         ```
         <details><summary>Click to expand</summary>
-        
+
         ![Screenshot of phishing](https://full.link/to-image.ext)
-        
+
         </details>
         ```
     validations:
