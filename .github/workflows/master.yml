@@ -35,11 +35,7 @@ jobs:
       - name: Git Status
         run: git status
 
-      - name: Set commit tag
-        run: |
-          tag=$(date +'day: %j of year %Y %H:%M:%S')
-
       - name: Commit all changed files back to the repository
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "Hierarchical sorted the lists $tag"
+          commit_message: "Hierarchical sorted the lists"

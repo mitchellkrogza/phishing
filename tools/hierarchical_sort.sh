@@ -8,7 +8,7 @@ if [ -d "$GIT_DIR" ]; then
     cd "${GIT_DIR}" || exit 1
 
 
-FILES=('add-domain' 'add-link' 'add-wildcard-domain' 'falsepositive.list' 'falsepositive_regex.list' 'falsepositive_rzd.list')
+FILES=('add-domain' 'add-wildcard-domain' 'falsepositive.list' 'falsepositive_regex.list' 'falsepositive_rzd.list')
 
     for i in "${FILES[@]}"; do
         python3.11 "$GIT_DIR/tools/domain-sort.py" <"${i}" >"${i}.tmp" &&
