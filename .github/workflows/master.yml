@@ -9,7 +9,7 @@ on:
       - dev-autosort-lists
 
 jobs:
-  build:
+  sort:
     runs-on: ubuntu-latest
 
     permissions:
@@ -18,8 +18,6 @@ jobs:
     steps:
       - name: Checkout the repo
         uses: actions/checkout@main
-        with:
-          ref: ${{ github.head_ref }}
 
       - name: Setup Python 3.11
         uses: actions/setup-python@v5
@@ -28,11 +26,11 @@ jobs:
 
       - name: Install requirements
         run: |
-          if [ -f requirements.txt ]; then python3.11 -m pip install --no-cache-dir -r requirements.txt; fi
+          pip install --no-cache-dir -r requirements.txt
 
       - name: 'Sort the lists hierarchical'
         run: |
-          sh "${{ github.workspace }}/tools/hierarchical_sort.sh"
+          bash "${{ github.workspace }}/tools/hierarchical_sort.sh"
 
       - name: Git Status
         run: git status
