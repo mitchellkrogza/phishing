@@ -24,6 +24,8 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: 3.11
+
+      - name: Install requirements
         run: |
           if [ -f requirements.txt ]; then python3.11 -m pip install --no-cache-dir -r requirements.txt; fi
 
