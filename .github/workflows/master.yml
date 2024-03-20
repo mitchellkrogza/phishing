@@ -25,8 +25,7 @@ jobs:
         with:
           python-version: 3.11
         run: |
-          if [ -f requirements.txt ]; then python3.11 -m pip install
-          --no-cache-dir -r requirements.txt; fi
+          if [ -f requirements.txt ]; then python3.11 -m pip install --no-cache-dir -r requirements.txt; fi
 
       - name: 'Sort the lists hierarchical'
         run: |
