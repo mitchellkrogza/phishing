@@ -1,4 +1,4 @@
-## Domain/URL/IP(s) where you have found the Phishing:
+## Phishing Domain/URL/IP(s):
 <!-- Required. Use Back ticks. -->
 
 
