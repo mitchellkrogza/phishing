@@ -1,0 +1,41 @@
+name: Sort sources hierarchical
+
+on:
+  pull_request:
+  push:
+    branches:
+      - master
+      - main
+      - dev-autosort-lists
+
+jobs:
+  sort:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout the repo
+        uses: actions/checkout@main
+
+      - name: Setup Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.11
+
+      - name: Install requirements
+        run: |
+          pip install --no-cache-dir -r requirements.txt
+
+      - name: 'Sort the lists hierarchical'
+        run: |
+          bash "${{ github.workspace }}/tools/hierarchical_sort.sh"
+
+      - name: Git Status
+        run: git status
+
+      - name: Commit all changed files back to the repository
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Hierarchical sorted the lists"
