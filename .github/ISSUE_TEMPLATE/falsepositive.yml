@@ -3,8 +3,7 @@ name: False Positive Report
 description: File a Phishing report
 labels: ["False Positive"]
 assignees:
-  - mitchellkrogza
-  - funilrys
+  - spirillen
 body:
   - type: markdown
     attributes:
