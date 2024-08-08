@@ -55,7 +55,6 @@ body:
         Image posting code line
         `![Screenshot of phishing](https://full.link/to-image.ext)`
       value: |
-        ```
         <details><summary>Screenshot, Phishing site</summary>
 
 
@@ -67,7 +66,6 @@ body:
 
 
         </details>
-        ```
     validations:
       required: true
 
