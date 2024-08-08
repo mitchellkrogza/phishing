@@ -1,8 +1,5 @@
 name: Phishing Report
 description: File a Phishing report
-assignees:
-  - mitchellkrogza
-  - funilrys
 body:
   - type: textarea
     attributes:
@@ -46,35 +43,33 @@ body:
       required: true
 
   - type: textarea
-    id: Screenshot
+    id: screenshot
     attributes:
       label: Screenshot
       description: |
-        If you feel a screenshot can say more than 1000 hard drives, do
-        please feel free to add it here :smiley:
+        Please add screenshot of the phishing site + impersonated domain
 
         **INFO** There need to be at least one blank line separating before
         and after the image line
-
-        Copy and paste the lines to the text area below.
-
+        
+        Image posting code line
+        `![Screenshot of phishing](https://full.link/to-image.ext)`
+      value: |
         ```
-        <details><summary>Click to expand</summary>
+        <details><summary>Screenshot, Phishing site</summary>
 
 
         </details>
-        ```
-      render: Markdown
-      placeholder: |
-        ```
-        <details><summary>Click to expand</summary>
+        
+        --------
+        
+        <details><summary>Screenshot, Impersonated site</summary>
 
-        ![Screenshot of phishing](https://full.link/to-image.ext)
 
         </details>
         ```
     validations:
-      required: false
+      required: true
 
   - type: textarea
     attributes:
