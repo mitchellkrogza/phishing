@@ -80,9 +80,9 @@ body:
         If you feel a screenshot can say more than the words on 1000 hard drives, do please feel free to add it here :smiley:
 
         **INFO** There need to be at least one blank line separating before and after the image line
-      placeholder: |
-        <details><summary>Click to expand</summary>
-
+      value: |
+        <details><summary>Screenshot, Phishing site</summary>
+        
         
         </details>
     validations:
