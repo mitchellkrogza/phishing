@@ -6,17 +6,12 @@ body:
     attributes:
       label: Phishing Domain/URL/IP(s)
       description: |
-        List the Domain/URI/IP for where the phishing occurs is
-        **mandatory**. 
-        The backticks (`) surrounding the Domain/URL/IPs are important,
-        it prevents the URL from becoming clickable.
+        List the Domain/URI/IP for where the phishing occurs is **mandatory**. 
+        The backticks (`) surrounding the Domain/URL/IPs are important, it prevents the URL from becoming clickable.
 
         Warn with "NSFW" where applicable.
 
-        **Help** To make the right commit for IP-addresses you have to
-        also prefix the CIDR notation, if you don't know what a CIDR
-        notation is, the right value is most likely `/32`, which in short
-        means exactly this IP address.
+        **Help** To make the right commit for IP-addresses you have to also prefix the CIDR notation, if you don't know what a CIDR notation is, the right value is most likely `/32`, which in short means exactly this IP address.
       placeholder: |
         example.com
         https://example.org/phishing
@@ -38,8 +33,7 @@ body:
     attributes:
       label: Describe your experience.
       description: |
-        Be as clear as possible: nobody can read your mind, and nobody
-        is looking at your issue over your shoulder.
+        Be as clear as possible: nobody can read your mind, and nobody is looking at your issue over your shoulder.
     validations:
       required: true
 
@@ -50,11 +44,9 @@ body:
       description: |
         Please add screenshot of the phishing site + impersonated domain
 
-        **INFO** There need to be at least one blank line separating before
-        and after the image line
+        **INFO** There need to be at least one blank line separating before and after the image line
         
-        Image posting code line
-        `![Screenshot of phishing](https://full.link/to-image.ext)`
+        Image posting code line `![Screenshot of phishing](https://full.link/to-image.ext)`
       value: |
         <details><summary>Screenshot, Phishing site</summary>
 
@@ -74,8 +66,7 @@ body:
     attributes:
       label: Related external source
       description: |
-        If you have found your information in another fora, please paste
-        link here.
+        If you have found your information in another fora, please paste link here.
 
         One link per line.
       placeholder: |
