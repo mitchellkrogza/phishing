@@ -1,3 +1,22 @@
+**Domains or links**
+Please list any domains and links listed here which you believe are a false positive.
+1923shop.com
+
+**More Information**
+How did you discover your web site or domain was listed here?
+1. Website was hacked
+No. It didn't.
+2. Incorrectly marked as Phishing on Phishtank or OpenPhish?
+Running Virus Total, I noticed that the domain was incorrectly added to the Phishing list.
+
+**Have you requested removal from other sources?**
+Please include all relevant links to your existing removals / whitelistings.
+https://1923shop.com/
+
+**Additional context**
+Add any other context about the problem here.
+Updated Imunify to version  7.18.2-2
+================================================
 # This list is used to match 1 to 1
 injective.talis.art
 lnk.at
