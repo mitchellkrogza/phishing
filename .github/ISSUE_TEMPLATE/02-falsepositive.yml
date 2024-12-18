@@ -8,24 +8,20 @@ body:
   - type: markdown
     attributes:
       value: |
-        We understand being listed on a Phishing Database like this can be
-        frustrating and embarrassing for many web site owners.
+        We understand being listed on a Phishing Database like this can be frustrating and embarrassing for many web site owners.
 
         The first step is to remain calm.
         
-        The second step is to rest assured one of our maintainers will address
-        your issue as soon as possible.
+        The second step is to rest assured one of our maintainers will address your issue as soon as possible.
 
-        Please make sure you have provided as much information and details as
-        possible to help speed up the processing of your whitelisting application.
+        Please make sure you have provided as much information and details as possible to help speed up the processing of your whitelisting application.
 
   - type: textarea
     id: FPrecord
     attributes:
       label: Domain/URL/IP(s) you believe NOT to be Phishing
       description: |
-        Please give us a list of FQDN (domains) or complete links (URI's) that
-        you believe to be false positives.
+        Please give us a list of FQDN (domains) or complete links (URI's) that you believe to be false positives.
         
         Please warn with "NSFW" where applicable.
       placeholder: |
@@ -36,31 +32,34 @@ body:
     validations:
       required: true
 
-  - type: checkboxes
+  - type: dropdown
     id: recordtype
+    validations:
+      required: true
     attributes:
       label: Whitelist type
       description: How do you believe the domain or uri should be whitelisted? More help can be found in the [README](https://github.com/mitchellkrogza/phishing#false-positives)
+      multiple: false
       options:
-        - label: '`1 to 1` match'
-          required: false
-        - label: '`ALL` subdomains or `REGEX`'
-          required: false
-        - label: '`RZD` all sub- and top level domains matching given record(s)'
-          required: false
+        - '`1 to 1` match'
+        - '`ALL` subdomains or `REGEX`'
+        - '`RZD` all sub- and top level domains matching given record(s)'
 
-  - type: checkboxes
+  - type: dropdown
     id: source
+    validations:
+      required: true
     attributes:
       label: More Information
       description: |
         How did you discover your IP-address or domain was listed in the Phishing or Phishing.Database?
+      multiple: true
       options:
-        - label: Website was hacked
-        - label: Phishtank
-        - label: OpenPhish
-        - label: VirusTotal
-        - label: Other (Please fill out the next box)
+        - Website was hacked
+        - Phishtank
+        - OpenPhish
+        - VirusTotal
+        - Other (Please fill out the next box)
 
   - type: textarea
     id: ifOther
@@ -70,7 +69,6 @@ body:
         Please let us know where you found this if not listed above. (One link per line.)
       placeholder: |
         https://example.org
-      render: Markdown
     validations:
       required: false
 
@@ -79,32 +77,20 @@ body:
     attributes:
       label: Screenshot
       description: |
-        If you feel a screenshot can say more than 1000 hard drives, do
-        please feel free to add it here :smiley:
+        If you feel a screenshot can say more than the words on 1000 hard drives, do please feel free to add it here :smiley:
 
-        **INFO** There need to be at least one blank line separating before
-        and after the image line
-
-        Copy and paste the lines to the text area below and paste the image link between the lines.
-
-        ```
-        <details><summary>Click to expand</summary>
+        **INFO** There need to be at least one blank line separating before and after the image line
+      value: |
+        <details><summary>Screenshot, Phishing site</summary>
         
         
         </details>
-        ```
-      placeholder: |
-        ```
-        <details><summary>Click to expand</summary>
-
-        ![Screenshot of phishing](https://full.link/to-image.ext)
-        
-        </details>
-        ```
     validations:
       required: false
 
   - type: textarea
+    validations:
+      required: false
     attributes:
       label: Additional context
       value: Add any other context about the problem here.
