@@ -5,7 +5,6 @@ on:
   push:
     branches:
       - master
-      - main
       - dev-autosort-lists
 
 jobs:
